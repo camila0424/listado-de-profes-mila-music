@@ -1,0 +1,85 @@
+.teacher_card{
+    margin-top: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    border: solid 2px #521B58;
+    font-family:"Arsenal SC", sans-serif;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 10px;
+    gap: 1rem;
+}
+
+.photo_teacher{
+    width: 100px;
+}
+//---------------info card
+.name_teacher{
+    margin-bottom: 15px;
+}
+
+.ad_title{
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 300px;
+}
+
+.ad_description{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;       
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 20px;   
+}
+
+.see_more_teacher_item {
+    text-decoration: none;
+    color: black;
+    font-size: bolder;
+    font-weight: 600;
+    
+}
+//--------------------------botones card
+.buttons_teacher_card{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    flex-direction: column;
+}
+
+
+.check_availability_btn{
+    background-color: #521B58;
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+    width: 150px;
+    border-radius: 5px;
+    text-align: center;
+    position: static;
+    right: 10px;
+    
+}
+
+.contact_btn{
+    background-color: white;
+    color: #521B58;
+    border: solid 2px #521B58;
+    text-decoration: none;
+    padding: 7px;
+    width: 150px;
+    border-radius: 5px;
+    text-align: center;
+    position: static;
+    bottom: 5px;   
+    right: 10px;
+}
+
