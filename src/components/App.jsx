@@ -1,17 +1,16 @@
 import { useState, useEffect } from "react";
-/* import { useLocation } from "react-router-dom"; */
-import { Route, Routes } from "react-router-dom";
+
+import { Link, Route, Routes } from "react-router-dom";
 import "../styles/App.scss";
-import List from "./list/list";
+import List from "./list/List";
 import FormInput from "./list/Form";
+import TeacherDetail from "./pages/TeacherDetail";
 
 function App() {
   const [allTeachers, setAllTeachers] = useState([]);
   const [filterInstrument, setFilterInstrument] = useState("");
 
   const [selectedLanguage, setSelectedLanguage] = useState("");
-
-  /* const location = useLocation(); */
 
   const handleInputFilterInstrument = (ev) => {
     setFilterInstrument(ev.target.value);
@@ -27,24 +26,28 @@ function App() {
       teacher.instrument.toLowerCase().includes(filterInstrument.toLowerCase())
   );
   useEffect(() => {
-    fetch("./data/da.json")
+    fetch("/data/data.json")
       .then((res) => res.json())
       .then((data) => {
+        console.log("Datos cargados:", data);
         setAllTeachers(data);
+      })
+      .catch((error) => {
+        console.error("Error al cargar los datos:", error);
       });
   }, []);
 
   return (
     <>
       <header>
-        <a href="./">
+        <Link to="/">
           {" "}
           <img
             className="logo_header_lis_teachers"
             src="./images/logo__final.png"
             alt="Esta es la imagen del logo de Mila Music"
           />{" "}
-        </a>
+        </Link>
       </header>
       <FormInput
         handleInputFilterInstrument={handleInputFilterInstrument}
@@ -54,9 +57,10 @@ function App() {
       />
       <main>
         <Routes>
+          <Route path="/" element={<List allTeachers={filteredTeachers} />} />
           <Route
-            path="/detail/:instrument"
-            element={<List allTeachers={filteredTeachers} />}
+            path="/TeacherDetail/:id"
+            element={<TeacherDetail teachers={allTeachers} />}
           />
         </Routes>
       </main>

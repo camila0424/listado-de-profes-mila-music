@@ -1,7 +1,7 @@
 [{  
     "id":"1",
     "name": "Helena B.",
-    "photo": "./images/profesores/Helena.png",
+    "photo": "/images/profesores/Helena.png",
     "number_of_classes": "11 clases",
     "instrument":"Guitarra",
     "language":"Español",
@@ -11,7 +11,7 @@
 {
     "id":"2",
     "name": "Hector R.",
-    "photo": "./images/profesores/Hector.png",
+    "photo": "/images/profesores/Hector.png",
     "number_of_classes": "22 clases",
     "instrument":"Guitarra",
     "language":"Español",
@@ -22,7 +22,7 @@
 {
     "id":"3",
     "name": "Roberto M.",
-    "photo": "./images/profesores/Roberto.png",
+    "photo": "/images/profesores/Roberto.png",
     "number_of_classes": "15 clases",
     "instrument":"Guitarra",
     "language":"Español, English, Italian",
@@ -32,7 +32,7 @@
 {
     "id":"4",
     "name": "Victor S.",
-    "photo": "./images/profesores/Victor.png",
+    "photo": "/images/profesores/Victor.png",
     "number_of_classes": "22 clases",
     "instrument":"Trompeta",
     "language":"Español",
@@ -42,9 +42,9 @@
 {
     "id":"5",
     "name": "Victoria S.",
-    "photo": "./images/profesores/Victoria.png",
+    "photo": "/images/profesores/Victoria.png",
     "number_of_classes": "8 clases",
-    "instrument":"clarinete",
+    "instrument":"Clarinete",
     "language":"Español, Francés",
     "ad_title":"Clases de Clarinete para todos los niveles y edades, Online o Presencial en Madrid",
     "ad_desc":"Clarinetista solista de la Philharmonisches Orchester der Stadt Ulm, Alemania. Formada en la Escuela Superior de Música Reina Sofía, en el Centro Superior Katarina Gurska y en la Hochschule für Musik de Freiburg.Colabora regularmente con orquestas como la Deutsche Kammerphilharmonie Bremen, Stuttgarter Kammerorchester, Luxembourg Philharmonic, Staatskapelle Dresden, Philharmonisches Orchester Freiburg, Theater Pforzheim, Liceo de Barcelona, Orquesta Sinfónica de Tenerife o la Orquesta Sinfónica de Madrid, compartiendo escenario con músicos como Lisa Batiashvili, Krystian Zimerman o Christian Gerhaher y bajo la batuta de renombrados directores como Pavo Jarvi, Klaus Mäkelä, Christian Thielemann o Daniel Harding."
@@ -52,7 +52,7 @@
 {
     "id":"6",
     "name": "Ricardo A.",
-    "photo": "./images/profesores/Ricardo.png",
+    "photo": "/images/profesores/Ricardo.png",
     "number_of_classes": "32 clases",
     "instrument":"Guitarra",
     "language":"Español",
@@ -62,7 +62,7 @@
 {
     "id":"7",
     "name": "Camilo S.",
-    "photo": "./images/profesores/Camilo.png",
+    "photo": "/images/profesores/Camilo.png",
     "number_of_classes": "20 clases",
     "instrument":"Saxofón",
     "language":"Español, Inglés",

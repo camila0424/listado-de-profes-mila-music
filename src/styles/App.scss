@@ -14,7 +14,10 @@ $fontsize_text: 1.125rem;
     font-weight: 400;
     font-style: normal;
 }
-
+a{
+  all: unset;
+  cursor: pointer;
+}
 .text {
   font-family: "Arsenal SC", sans-serif;
   font-weight: 400;
