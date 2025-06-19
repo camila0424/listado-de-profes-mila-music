@@ -8,7 +8,7 @@ function List({ allTeachers }) {
   return (
     <ul>
       {allTeachers.map((teacher) => (
-        <li className="teacher_card" key={teacher.instrument}>
+        <li className="teacher_card" key={teacher.id}>
           <Item teacherToShow={teacher} />
         </li>
       ))}

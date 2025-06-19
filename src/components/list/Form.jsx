@@ -24,7 +24,6 @@ function FormInput({
         <option value="Español">Español</option>
         <option value="English">Inglés</option>
         <option value="Francés">Francés</option>
-        <option value="Italiano">Italiano</option>
       </select>
     </form>
   );

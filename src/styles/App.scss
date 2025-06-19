@@ -1,7 +1,7 @@
 @use './core/reset';
-@use './header__profes/header.scss';
-@use './header__profes/sub_header.scss';
-@use './header__profes/teacher_list.scss';
+@use './list-teachers/header.scss';
+@use './list-teachers/sub_header.scss';
+@use './list-teachers/teacher_list.scss';
 
 $font_text: "Arsenal SC", sans-serif;
 $font_title1: "Arsenal SC", sans-serif;

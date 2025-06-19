@@ -14,7 +14,7 @@ function Item({ teacherToShow }) {
         <h3 className="name_teacher">{teacherToShow.name}</h3>
         <p>{teacherToShow.number_of_classes}</p>
         <h4 className="instrumet_to_teach">{teacherToShow.instrument}</h4>
-        <p>Habla{teacherToShow.language}</p>
+        <p>Habla {teacherToShow.language}</p>
         <p className="ad_title">{teacherToShow.ad_title}</p>
         <p className="ad_description">{teacherToShow.ad_desc}</p>
         <Link
