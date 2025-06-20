@@ -1,18 +1,17 @@
-import { Link } from "react-router-dom";
-import Item from "./Item";
+import TeacherItem from "./TeacherItem";
 
-function List({ allTeachers }) {
+function ListingTeachers({ allTeachers }) {
   if (!Array.isArray(allTeachers)) {
     return <p>Cargando profesores...</p>;
   }
   return (
-    <ul>
+    <ul className="listing_teachers_container">
       {allTeachers.map((teacher) => (
         <li className="teacher_card" key={teacher.id}>
-          <Item teacherToShow={teacher} />
+          <TeacherItem teacherToShow={teacher} />
         </li>
       ))}
     </ul>
   );
 }
-export default List;
+export default ListingTeachers;

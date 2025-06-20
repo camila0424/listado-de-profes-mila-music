@@ -20,12 +20,20 @@ function TeacherDetail({ allTeachers }) {
         <p className="detail_cost_per_hour">
           Valor de la clase: {teacherToShow.cost_per_hour}
         </p>
+
+        <h3 className="detail_about_teacher">Título del anuncio</h3>
         <p className="detail_ad_title">{teacherToShow.ad_title}</p>
+
+        <h3 className="detail_about_teacher">Acerca del profe</h3>
         <p className="detail_ad_description">{teacherToShow.ad_desc}</p>
+
+        <h3 className="detail_about_teacher">Acerca de la clase</h3>
         <p className="detail_class_description">{teacherToShow.class_desc}</p>
       </div>
 
-      <Link to="/">Volver</Link>
+      <Link className="detail_return_btn" to="/">
+        Volver
+      </Link>
     </div>
   );
 }

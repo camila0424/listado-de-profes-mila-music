@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 
 import { Link, Route, Routes } from "react-router-dom";
 import "../styles/App.scss";
-import List from "./list/List";
-import FormInput from "./list/Form";
+import ListingTeachers from "./listing_teachers/ListingTeachers";
+import FormTeachersList from "./listing_teachers/FormTeachersList";
 import TeacherDetail from "./pages/TeacherDetail";
 
 function App() {
@@ -49,7 +49,8 @@ function App() {
           />{" "}
         </Link>
       </header>
-      <FormInput
+
+      <FormTeachersList
         handleInputFilterInstrument={handleInputFilterInstrument}
         selectedLanguage={selectedLanguage}
         filterInstrument={filterInstrument}
@@ -57,7 +58,10 @@ function App() {
       />
       <main>
         <Routes>
-          <Route path="/" element={<List allTeachers={filteredTeachers} />} />
+          <Route
+            path="/"
+            element={<ListingTeachers allTeachers={filteredTeachers} />}
+          />
           <Route
             path="/teacher-detail/:id/:name"
             element={<TeacherDetail allTeachers={allTeachers} />}

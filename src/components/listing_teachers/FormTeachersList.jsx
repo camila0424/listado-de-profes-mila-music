@@ -1,4 +1,4 @@
-function FormInput({
+function FormTeachersList({
   handleInputFilterInstrument,
   selectedLanguage,
   filterInstrument,
@@ -29,4 +29,4 @@ function FormInput({
   );
 }
 
-export default FormInput;
+export default FormTeachersList;

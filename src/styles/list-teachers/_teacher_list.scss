@@ -1,3 +1,11 @@
+.listing_teachers_container{ display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    min-height: 100vh;       
+    gap: 2rem;  }
+
+
 .teacher_card{
     margin-top: 3rem;
     margin-left: 3rem;
@@ -7,20 +15,25 @@
     list-style: none;
     display: flex;
     flex-direction: row;
-    position: relative;
-    padding: 10px;
+    justify-content: center; 
+    padding: 20px;
     gap: 1rem;
+    max-width: 700px; 
+    width: 100%; 
+    box-sizing: border-box;
 }
 
-.photo_teacher{
+.photo_teacher_card{
     width: 100px;
 }
 //---------------info card
-.name_teacher{
+.name_teacher_card{
     margin-bottom: 15px;
+    color: #521B58;
+    font-size: 1.5rem;
 }
 
-.ad_title{
+.ad_title_card{
     font-weight: bolder;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -30,7 +43,7 @@
     width: 300px;
 }
 
-.ad_description{
+.ad_description_card{
     display: -webkit-box;
     -webkit-line-clamp: 3;
     line-clamp: 3;       
@@ -40,7 +53,7 @@
     margin-bottom: 20px;   
 }
 
-.see_more_teacher_item {
+.see_more_teacher_item_card {
     text-decoration: none;
     color: black;
     font-size: bolder;
@@ -56,7 +69,7 @@
 }
 
 
-.check_availability_btn{
+.check_availability_btn_card{
     background-color: #521B58;
     color: white;
     text-decoration: none;
@@ -69,7 +82,7 @@
     
 }
 
-.contact_btn{
+.contact_btn_card{
     background-color: white;
     color: #521B58;
     border: solid 2px #521B58;
