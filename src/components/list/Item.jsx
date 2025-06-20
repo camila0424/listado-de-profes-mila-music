@@ -19,7 +19,9 @@ function Item({ teacherToShow }) {
         <p className="ad_description">{teacherToShow.ad_desc}</p>
         <Link
           className="see_more_teacher_item"
-          to={`/TeacherDetail/${teacherToShow.instrument}`}
+          to={`/teacher-detail/${
+            teacherToShow.id
+          }/${teacherToShow.name.replaceAll(/[\W_]+/g, "-")}`}
         >
           Ver Más...
         </Link>

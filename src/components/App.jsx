@@ -59,8 +59,8 @@ function App() {
         <Routes>
           <Route path="/" element={<List allTeachers={filteredTeachers} />} />
           <Route
-            path="/TeacherDetail/:id"
-            element={<TeacherDetail teachers={allTeachers} />}
+            path="/teacher-detail/:id/:name"
+            element={<TeacherDetail allTeachers={allTeachers} />}
           />
         </Routes>
       </main>
