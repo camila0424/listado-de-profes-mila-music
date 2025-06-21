@@ -5,6 +5,7 @@ import "../styles/App.scss";
 import ListingTeachers from "./listing_teachers/ListingTeachers";
 import FormTeachersList from "./listing_teachers/FormTeachersList";
 import TeacherDetail from "./pages/TeacherDetail";
+import ContactTeacher from "./pages/ContactTeacher";
 
 function App() {
   const [allTeachers, setAllTeachers] = useState([]);
@@ -65,6 +66,11 @@ function App() {
           <Route
             path="/teacher-detail/:id/:name"
             element={<TeacherDetail allTeachers={allTeachers} />}
+          />
+
+          <Route
+            path="/contact-teacher/:id/:name"
+            element={<ContactTeacher allTeachers={allTeachers} />}
           />
         </Routes>
       </main>

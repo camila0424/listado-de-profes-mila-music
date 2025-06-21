@@ -4,7 +4,9 @@ function TeacherDetail({ allTeachers }) {
   const { id } = useParams();
 
   const teacherToShow = allTeachers.find((teacher) => teacher.id === id);
-
+  if (!teacherToShow) {
+    return <p>Cargando datos...</p>;
+  }
   return (
     <div className="detailTeacher">
       <img
@@ -33,6 +35,14 @@ function TeacherDetail({ allTeachers }) {
 
       <Link className="detail_return_btn" to="/">
         Volver
+      </Link>
+      <Link
+        to={`/contact-teacher/${
+          teacherToShow.id
+        }/${teacherToShow.name.replaceAll(/[\W_]+/g, "-")}`}
+        className="detail_contact_btn"
+      >
+        Contactar
       </Link>
     </div>
   );
